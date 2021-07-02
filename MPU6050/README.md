@@ -16,7 +16,7 @@ Operating voltage = 3.3V (has a voltage regulator)
 
 ### Pinout diagram
 
-[!Oops Pin out diagram](https://github.com/EricoDeMecha/avionicsv2/MPU6050/images/MPU6050-Pinout.png)
+[!Oops Pin out diagram](https://github.com/EricoDeMecha/avionicsv2/blob/main/MPU6050/images/MPU6050-Pinout.png)
 
 *XDA*  and *XCL* allows for interfacing with other I2C modules
 ### Possible outputs
