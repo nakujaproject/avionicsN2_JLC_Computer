@@ -3,16 +3,16 @@ This is a 6-axis motion tracking device
 * 3-axis gyroscope
 * 3-axis accelerometer
 
-Also
+Also has
 
-*IMPORTANT* : DMP(Digital Motion processor)
+**IMPORTANT** : DMP(Digital Motion processor)
 - It is a 16-bit ADC. 
 - It accurately reads the change in voltage due to the variation of the fundamental mechanical system
 - Stores it in a FIFO buffer.
 - turn the interrupt HIGH - This means data is ready to be read from the FIFO buffer.
 
 
-Operating voltage = 3.3V (Has a voltage regulator)
+Operating voltage = 3.3V (has a voltage regulator)
 
 ### Pinout diagram
 
@@ -38,5 +38,22 @@ Operating voltage = 3.3V (Has a voltage regulator)
 
 ### Adafruit MPU6050
 Adafruit MPU6050 depends on 
-[Adafruit Unified Sensor Driver](https://github.com/adafruit/Adafruit_Sensor) , [Adafruit BUS IO library](https://github.com/adafruit/Adafruit_BusIO) 
+[Adafruit Unified Sensor Driver](https://github.com/adafruit/Adafruit_Sensor) ,and [Adafruit BUS IO library](https://github.com/adafruit/Adafruit_BusIO) 
 
+### Local Setup
+
+**Note**  Arduino local setups might vary. Find your arduino ***include directory*** before doing the following...
+
+- Clone the repo to your local machine
+- Add all these Adafruit_* directories to your ***include directory*** 
+- Move  "MPU6050_avN2.ino" sketch your development  directory
+- Open the sketch from your development environment
+- Do your MPU6050 thing...
+
+## Progress
+
+- [x] Basic interfacing of MPU6050 with arduino || esp
+
+- [ ] Roll, Pitch and Yaw in relation to angle of attack.
+
+- [ ] More...
