@@ -4,7 +4,7 @@
   "name": "N2 Avionics board",
   "content": "",
   "created_at": "2021-09-16 16:04:03",
-  "updated_at": "2021-10-22 11:49:16",
+  "updated_at": "2021-11-04 16:39:57",
   "stick": "",
   "documents": [
     {
@@ -12,29 +12,31 @@
       "title": "Sheet_1",
       "description": "",
       "docType": "1",
-      "master": "fa04fa0da505d3ab6c83f206c4c6f2da",
+      "master": "9fdf9299bb6657bc5f6c0b41571b2b09",
       "thumb": "/images/thumb-default.png",
       "components": {
         "8b8f2c4b0f1a4c05b9bf99dce6e3b5cc": 1,
         "9671c039d2b14ede922a1ee000bcc452": 1,
-        "9a1dab2264ee9c0dd27f0d885a0978e6": 2,
+        "9a1dab2264ee9c0dd27f0d885a0978e6": 3,
         "736876f24b5b418d94baa3b17df427eb": 1,
-        "6aed8d590c4e40fbb14c8ce120dbe52b": 4,
+        "6aed8d590c4e40fbb14c8ce120dbe52b": 6,
         "21b019389fd84119881c7a546c5f6ec4": 2,
         "282229edd3da490287b438dcfe6a536c": 2,
         "b3c95761c0494918b59378f0fb3c5d55": 1,
         "13496764f83d55de6ee6c40c818f3731": 2,
         "269d82dd1f2a4b2c944c1797ef62b603": 1,
         "82f04e1a26734d24ab065ae0b5aaed5f": 1,
-        "a571133e57b33f8fdf2317261143470d": 2,
         "d6ba76d9bc514c31a111d4331a0b6655": 1,
-        "3d240747a85043e08408d9845ebe7995": 1,
         "cc02842d85cf4b0b856857ce646c5b78": 1,
         "245526444bbe85b260f4b99a6aa28864": 1,
         "0e9af40e10eb0954509ee99672d67d03": 2,
         "3d033fcb6d334c25b65a754834cf5aaf": 1,
         "c1b8023c39f9ae4feab1b505913b8c7d": 1,
-        "154b66255b01a09bf1c88bb1ea89be78": 2
+        "154b66255b01a09bf1c88bb1ea89be78": 2,
+        "a571133e57b33f8fdf2317261143470d": 1,
+        "6b437a4b56264289acc834305cd97329": 1,
+        "a0482e3af24243c5a3e3eb4eff3c891d": 1,
+        "fc50540dc586433d98438d71d674e54d": 1
       },
       "BOM": [
         [
@@ -46,9 +48,9 @@
         ],
         [
           "10uF",
-          4,
+          6,
           "C0402",
-          "C1,C2,C5,C6",
+          "C1,C2,C5,C6,C10,C11",
           {
             "BOM_Supplier": "LCSC",
             "BOM_Supplier Part": "C307416",
@@ -120,21 +122,6 @@
           }
         ],
         [
-          "TF-01A",
-          1,
-          "TF-SMD_TF-01A",
-          "CARD1",
-          {
-            "BOM_Supplier": "LCSC",
-            "BOM_Manufacturer": "HRO",
-            "BOM_Manufacturer Part": "TF-01A",
-            "BOM_Supplier Part": "C91145",
-            "BOM_JLCPCB Part Class": "Extended Part",
-            "puuid": "9a08f47f425f4bad84311d285e13676f",
-            "uuid": "3d240747a85043e08408d9845ebe7995"
-          }
-        ],
-        [
           "X9556WRS-02-9TV01",
           1,
           "CONN-SMD_X9556WRS-02-9TV01",
@@ -147,6 +134,17 @@
             "BOM_JLCPCB Part Class": "Extended Part",
             "puuid": "a9ba79d49fad4f338f982bc805ba3e5b",
             "uuid": "82f04e1a26734d24ab065ae0b5aaed5f"
+          }
+        ],
+        [
+          "M03SCREW_LOCK",
+          1,
+          "SCREWTERMINAL-3.5MM-3_LOCK.007S",
+          "J1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "d464b86f462c444ea38d9b3aadf2c4c5",
+            "uuid": "6b437a4b56264289acc834305cd97329"
           }
         ],
         [
@@ -181,9 +179,9 @@
         ],
         [
           "5.1K",
-          2,
+          3,
           "R0402",
-          "R1,R2",
+          "R1,R2,R8",
           {
             "BOM_Supplier": "LCSC",
             "BOM_Manufacturer": "UniOhm",
@@ -255,18 +253,18 @@
           }
         ],
         [
-          "MPU-6050_C24112",
-          2,
-          "QFN-24_L4.0-W4.0-P0.50-BL-MPU-6050",
-          "U2,U6",
+          "ATGM332D-5N31",
+          1,
+          "GSM-SMD_ATGM332D-5N31",
+          "U2",
           {
             "BOM_Supplier": "LCSC",
-            "BOM_Manufacturer": "InvenSense",
-            "BOM_Manufacturer Part": "MPU-6050",
-            "BOM_Supplier Part": "C24112",
-            "BOM_JLCPCB Part Class": "Basic Part",
-            "puuid": "330cc923c2624e59a093f2f473f629f9",
-            "uuid": "a571133e57b33f8fdf2317261143470d"
+            "BOM_Manufacturer": "ZHONGKEWEI",
+            "BOM_Manufacturer Part": "ATGM332D-5N31",
+            "BOM_Supplier Part": "C128659",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "fc18dcf34cf248ddabe535a8c1eb13e9",
+            "uuid": "a0482e3af24243c5a3e3eb4eff3c891d"
           }
         ],
         [
@@ -315,6 +313,21 @@
           }
         ],
         [
+          "MPU-6050_C24112",
+          1,
+          "QFN-24_L4.0-W4.0-P0.50-BL-MPU-6050",
+          "U6",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "InvenSense",
+            "BOM_Manufacturer Part": "MPU-6050",
+            "BOM_Supplier Part": "C24112",
+            "BOM_JLCPCB Part Class": "Basic Part",
+            "puuid": "330cc923c2624e59a093f2f473f629f9",
+            "uuid": "a571133e57b33f8fdf2317261143470d"
+          }
+        ],
+        [
           "AMS1117-5.0",
           1,
           "SOT-223_L6.5-W3.5-P2.30-LS7.0-BR",
@@ -327,6 +340,21 @@
             "BOM_JLCPCB Part Class": "Basic Part",
             "puuid": "4ca399a3887148eeab92cd3a98a855b3",
             "uuid": "245526444bbe85b260f4b99a6aa28864"
+          }
+        ],
+        [
+          "AT2659",
+          1,
+          "DFN-6_L1.6-W1.0-P0.55-BL",
+          "U8",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "ZHONGKEWEI",
+            "BOM_Manufacturer Part": "AT2659",
+            "BOM_Supplier Part": "C92450",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "4776e1dcb04349eab889b9a02a8ed332",
+            "uuid": "fc50540dc586433d98438d71d674e54d"
           }
         ],
         [
@@ -345,16 +373,16 @@
           }
         ]
       ],
-      "updateTime": 1634892556,
+      "updateTime": 1636033197,
       "createTime": 1631204235,
       "histories": [],
       "created_at": "2021-09-09 19:17:15",
-      "updated_at": "2021-10-22 11:49:16"
+      "updated_at": "2021-11-04 16:39:57"
     }
   ],
   "sort": [],
   "title": "N2 Avionics board",
   "foldername": "N2 Avionics board",
   "schfilename": "N2 Avionics board.json",
-  "schfilemtime": 1634892556756
+  "schfilemtime": 1636033197583
 }
