@@ -4,7 +4,7 @@
   "name": "N2 Avionics board",
   "content": "",
   "created_at": "2021-09-16 16:04:03",
-  "updated_at": "2021-12-05 00:07:37",
+  "updated_at": "2021-12-19 19:59:09",
   "stick": "",
   "documents": [
     {
@@ -33,7 +33,6 @@
         "c1b8023c39f9ae4feab1b505913b8c7d": 1,
         "154b66255b01a09bf1c88bb1ea89be78": 2,
         "a571133e57b33f8fdf2317261143470d": 1,
-        "6b437a4b56264289acc834305cd97329": 1,
         "a0482e3af24243c5a3e3eb4eff3c891d": 1,
         "fc50540dc586433d98438d71d674e54d": 1,
         "0162c93b05c079a4f063ffb73f50c063": 1,
@@ -44,7 +43,8 @@
         "76d1280f2be942b4a7894b917959b68f": 1,
         "376dc041229a40bf84b13b5c9e9dc2ee": 1,
         "7df199659c41e40e920722d2ed574ba7": 1,
-        "0c450d6f7f84a53b0fecc9ffe900e454": 1
+        "0c450d6f7f84a53b0fecc9ffe900e454": 1,
+        "f8869938632547dc837b0a31b6eee578": 1
       },
       "BOM": [
         [
@@ -175,14 +175,18 @@
           }
         ],
         [
-          "M03SCREW_LOCK",
+          "210-91-03GB01",
           1,
-          "SCREWTERMINAL-3.5MM-3_LOCK.007S",
-          "J1",
+          "HDR-TH_3P-P2.54-V-M",
+          "H2",
           {
-            "BOM_Manufacturer Part": "",
-            "puuid": "d464b86f462c444ea38d9b3aadf2c4c5",
-            "uuid": "6b437a4b56264289acc834305cd97329"
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C390679",
+            "BOM_Manufacturer": "PINREX",
+            "BOM_Manufacturer Part": "210-91-03GB01",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "5c0be672313e4206a41dd5398a02f108",
+            "uuid": "f8869938632547dc837b0a31b6eee578"
           }
         ],
         [
@@ -544,13 +548,43 @@
             "puuid": "226176c6090a408f97941d6918aaf715",
             "uuid": "60d8e302d2fc4e56a7ca475f35d28648"
           }
+        ],
+        [
+          "TJ-L5FCMXHTCGSFLC9Y-A5",
+          1,
+          "LED-TH_BD5.8-P2.54-L-RD",
+          "LED3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C330767",
+            "BOM_Manufacturer": "TOGIALED",
+            "BOM_Manufacturer Part": "TJ-L5FCMXHTCGSFLC9Y-A5",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d6ccdb35e5e143d0ae1fb671ef122afa",
+            "uuid": "9038cee2c2864a338ca0bdf12324627d"
+          }
+        ],
+        [
+          "330",
+          1,
+          "R0402",
+          "R11",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "UniOhm",
+            "BOM_Manufacturer Part": "0402WGJ0331TCE",
+            "BOM_Supplier Part": "C12246",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "fafd024f554e426eb74cf4a204aa88b0",
+            "uuid": "13496764f83d55de6ee6c40c818f3731"
+          }
         ]
       ],
-      "updateTime": 1638547567,
+      "updateTime": 1639933067,
       "createTime": 1631204235,
       "histories": [],
       "created_at": "2021-09-09 19:17:15",
-      "updated_at": "2021-12-03 19:06:07"
+      "updated_at": "2021-12-19 19:57:47"
     },
     {
       "uuid": "e35c85baa9a2a1901458a25dffc0e4f1",
@@ -1117,7 +1151,6 @@
         "f8151fdc728a41ebbc304e11d39e5437": 5,
         "e8e78627020b4795961cd17fb8b42b10": 1,
         "5c779b2d00a94a63898d3dd94d7b7ab9": 1,
-        "d464b86f462c444ea38d9b3aadf2c4c5": 1,
         "318d2c3124b740ee9ca4dd4423ec5ad1": 1,
         "8da96988a9164ab09ca115e01caf2944": 1,
         "226176c6090a408f97941d6918aaf715": 2,
@@ -1136,14 +1169,15 @@
         "330cc923c2624e59a093f2f473f629f9": 1,
         "4ca399a3887148eeab92cd3a98a855b3": 1,
         "4776e1dcb04349eab889b9a02a8ed332": 1,
-        "53f27eb00c18474e8fde1c76707daaec": 1
+        "53f27eb00c18474e8fde1c76707daaec": 1,
+        "5c0be672313e4206a41dd5398a02f108": 1
       },
       "BOM": [],
-      "updateTime": 1638652057,
+      "updateTime": 1639933149,
       "createTime": 1638548260,
       "histories": [],
       "created_at": "2021-12-03 19:17:40",
-      "updated_at": "2021-12-05 00:07:37"
+      "updated_at": "2021-12-19 19:59:09"
     }
   ],
   "sort": [
@@ -1153,5 +1187,5 @@
   "title": "N2 Avionics board",
   "foldername": "N2 Avionics board",
   "schfilename": "N2 Avionics board.json",
-  "schfilemtime": 1638547848696
+  "schfilemtime": 1639933067869
 }
