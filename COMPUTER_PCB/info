@@ -4,7 +4,7 @@
   "name": "N2 Avionics board",
   "content": "",
   "created_at": "2021-09-16 16:04:03",
-  "updated_at": "2022-01-10 14:11:45",
+  "updated_at": "2022-01-11 02:35:15",
   "stick": "",
   "documents": [
     {
@@ -12,21 +12,21 @@
       "title": "Sheet_1",
       "description": "",
       "docType": "1",
-      "master": "cfd185640ca15b57c3735c209726ff13",
+      "master": "cf46436ca07930f5c2869818cd61f995",
       "thumb": "/images/thumb-default.png",
       "components": {
         "8b8f2c4b0f1a4c05b9bf99dce6e3b5cc": 1,
         "9671c039d2b14ede922a1ee000bcc452": 1,
         "9a1dab2264ee9c0dd27f0d885a0978e6": 3,
         "736876f24b5b418d94baa3b17df427eb": 1,
-        "6aed8d590c4e40fbb14c8ce120dbe52b": 6,
+        "6aed8d590c4e40fbb14c8ce120dbe52b": 7,
         "21b019389fd84119881c7a546c5f6ec4": 2,
         "282229edd3da490287b438dcfe6a536c": 2,
         "b3c95761c0494918b59378f0fb3c5d55": 1,
         "13496764f83d55de6ee6c40c818f3731": 2,
         "269d82dd1f2a4b2c944c1797ef62b603": 1,
         "d6ba76d9bc514c31a111d4331a0b6655": 1,
-        "cc02842d85cf4b0b856857ce646c5b78": 1,
+        "cc02842d85cf4b0b856857ce646c5b78": 3,
         "245526444bbe85b260f4b99a6aa28864": 1,
         "a0482e3af24243c5a3e3eb4eff3c891d": 1,
         "fc50540dc586433d98438d71d674e54d": 1,
@@ -35,13 +35,11 @@
         "7df199659c41e40e920722d2ed574ba7": 1,
         "0c450d6f7f84a53b0fecc9ffe900e454": 1,
         "f8869938632547dc837b0a31b6eee578": 1,
-        "dba3eb65e48d43f69d2d95eff218dfc8": 2,
-        "3f69fb7874b2264b31c6cd70d022e987": 2,
         "0162c93b05c079a4f063ffb73f50c063": 2,
-        "2457c126c888423a80536ea011ee2744": 2,
-        "ba037bf4a4d5474b970f136c60d9ed04": 2,
         "4363dc679f85409d8170eaa85095a946": 2,
-        "d0c0372084f943c391c1e9d9e82978ce": 1
+        "d0c0372084f943c391c1e9d9e82978ce": 1,
+        "3e4782e032b14a9e9b8bce027ddf48cf": 2,
+        "3f69fb7874b2264b31c6cd70d022e987": 2
       },
       "BOM": [
         [
@@ -53,9 +51,9 @@
         ],
         [
           "10uF",
-          6,
+          7,
           "C0402",
-          "C1,C2,C5,C6,C10,C11",
+          "C1,C2,C5,C6,C10,C11,C17",
           {
             "BOM_Supplier": "LCSC",
             "BOM_Supplier Part": "C307416",
@@ -68,9 +66,9 @@
         ],
         [
           "100nF",
-          1,
+          3,
           "C0603",
-          "C4",
+          "C4,C18,C19",
           {
             "BOM_Supplier": "LCSC",
             "BOM_Manufacturer": "WTC",
@@ -127,21 +125,6 @@
           }
         ],
         [
-          "1N4001W",
-          2,
-          "SOD-123F_L2.8-W1.8-LS3.7-RD",
-          "D2,D3",
-          {
-            "BOM_Supplier Part": "C162732",
-            "BOM_Supplier": "LCSC",
-            "BOM_Manufacturer": "Jingdao",
-            "BOM_Manufacturer Part": "1N4001W",
-            "BOM_JLCPCB Part Class": "Extended Part",
-            "puuid": "e8e78627020b4795961cd17fb8b42b10",
-            "uuid": "ba037bf4a4d5474b970f136c60d9ed04"
-          }
-        ],
-        [
           "Header-Female-2.54_1x5",
           1,
           "HDR-TH_5P-P2.54-V-F",
@@ -169,21 +152,6 @@
             "BOM_JLCPCB Part Class": "Extended Part",
             "puuid": "5c0be672313e4206a41dd5398a02f108",
             "uuid": "f8869938632547dc837b0a31b6eee578"
-          }
-        ],
-        [
-          "HRS4H-S-DC3V-C",
-          2,
-          "RELAY-TH_HRS4H-S-DC3V-C",
-          "K1,K4",
-          {
-            "BOM_Supplier": "LCSC",
-            "BOM_Manufacturer": "HKE",
-            "BOM_Manufacturer Part": "HRS4H-S-DC3V-C",
-            "BOM_Supplier Part": "C136104",
-            "BOM_JLCPCB Part Class": "Extended Part",
-            "puuid": "a1702e1d48dc459598830795af3ed78d",
-            "uuid": "dba3eb65e48d43f69d2d95eff218dfc8"
           }
         ],
         [
@@ -220,7 +188,7 @@
           "WJ126V-5.0-2P",
           2,
           "CONN-TH_WJ126V-5.0-2P",
-          "P4,P5",
+          "P1,P3",
           {
             "BOM_Supplier": "LCSC",
             "BOM_Manufacturer": "ReliaPro",
@@ -247,18 +215,18 @@
           }
         ],
         [
-          "BC817-40LT3G",
+          "IPT007N06N",
           2,
-          "SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR",
-          "Q4,Q5",
+          "HSOF-8_IPT007N06N",
+          "Q3,Q5",
           {
             "BOM_Supplier": "LCSC",
-            "BOM_Manufacturer": "ON",
-            "BOM_Manufacturer Part": "BC817-40LT3G",
-            "BOM_Supplier Part": "C146798",
+            "BOM_Manufacturer": "Infineon",
+            "BOM_Manufacturer Part": "IPT007N06N",
+            "BOM_Supplier Part": "C122552",
             "BOM_JLCPCB Part Class": "Extended Part",
-            "puuid": "b3b82869fa924bae820e3a6cfb44d689",
-            "uuid": "2457c126c888423a80536ea011ee2744"
+            "puuid": "91fff255c44b44a6857cb203c6855514",
+            "uuid": "3e4782e032b14a9e9b8bce027ddf48cf"
           }
         ],
         [
@@ -310,7 +278,7 @@
           "1K",
           2,
           "R0402",
-          "R12,R13",
+          "R13,R18",
           {
             "BOM_Supplier": "LCSC",
             "BOM_Manufacturer": "UniOhm",
@@ -652,11 +620,11 @@
           }
         ]
       ],
-      "updateTime": 1641813105,
+      "updateTime": 1641857715,
       "createTime": 1631204235,
       "histories": [],
       "created_at": "2021-09-09 19:17:15",
-      "updated_at": "2022-01-10 14:11:45"
+      "updated_at": "2022-01-11 02:35:15"
     },
     {
       "uuid": "e35c85baa9a2a1901458a25dffc0e4f1",
@@ -1332,5 +1300,5 @@
   "title": "N2 Avionics board",
   "foldername": "N2 Avionics board",
   "schfilename": "N2 Avionics board.json",
-  "schfilemtime": 1641813106109
+  "schfilemtime": 1641857715297
 }
