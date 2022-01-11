@@ -4,7 +4,7 @@
   "name": "N2 Avionics board",
   "content": "",
   "created_at": "2021-09-16 16:04:03",
-  "updated_at": "2022-01-11 03:26:09",
+  "updated_at": "2022-01-11 05:45:37",
   "stick": "",
   "documents": [
     {
@@ -12,7 +12,7 @@
       "title": "Sheet_1",
       "description": "",
       "docType": "1",
-      "master": "cf32f7079eb5b354d3fb86a6d3af7774",
+      "master": "917a3617e69c660046d9554ad6c3d6b4",
       "thumb": "/images/thumb-default.png",
       "components": {
         "8b8f2c4b0f1a4c05b9bf99dce6e3b5cc": 1,
@@ -620,18 +620,18 @@
           }
         ]
       ],
-      "updateTime": 1641860675,
+      "updateTime": 1641869137,
       "createTime": 1631204235,
       "histories": [],
       "created_at": "2021-09-09 19:17:15",
-      "updated_at": "2022-01-11 03:24:35"
+      "updated_at": "2022-01-11 05:45:37"
     },
     {
       "uuid": "e35c85baa9a2a1901458a25dffc0e4f1",
       "title": "Sheet_2",
       "description": "",
       "docType": "1",
-      "master": "46bfa19e85ebf53e76d87eddeb71f8c2",
+      "master": "",
       "thumb": "/images/thumb-default.png",
       "components": {
         "60d8e302d2fc4e56a7ca475f35d28648": 2,
@@ -1227,11 +1227,11 @@
           }
         ]
       ],
-      "updateTime": 1641860769,
+      "updateTime": 1641861206,
       "createTime": 1638540964,
       "histories": [],
       "created_at": "2021-12-03 17:16:04",
-      "updated_at": "2022-01-11 03:26:09"
+      "updated_at": "2022-01-11 03:33:26"
     },
     {
       "uuid": "1f2edd6776a90da95f094b158886ed08",
@@ -1243,39 +1243,87 @@
       "master": "",
       "thumb": "/images/thumb-default.png",
       "components": {
-        "23f7eb9b16cf4e9e93b10e2625e88f4b": 1,
-        "0821ed6ea50c44f4909e4be7610e4198": 9,
-        "f8151fdc728a41ebbc304e11d39e5437": 5,
+        "f5473c5ed40c49bba18f84eff437614e": 2,
+        "e55a062d79b04303ae20d291dd9f7f9e": 2,
+        "fafd024f554e426eb74cf4a204aa88b0": 15,
+        "91fff255c44b44a6857cb203c6855514": 2,
+        "062b3c1ca40e463696708e6a448b475e": 2,
+        "31a453d5adfc45cea944a6450adf2918": 1,
+        "062a6560404e424498dc526a33418d74": 1,
+        "0821ed6ea50c44f4909e4be7610e4198": 14,
+        "f8151fdc728a41ebbc304e11d39e5437": 7,
+        "685bd04c33df492ab1ad332fe461c196": 1,
+        "5c0be672313e4206a41dd5398a02f108": 1,
+        "53f27eb00c18474e8fde1c76707daaec": 1,
+        "4776e1dcb04349eab889b9a02a8ed332": 1,
+        "4ca399a3887148eeab92cd3a98a855b3": 1,
+        "330cc923c2624e59a093f2f473f629f9": 1,
+        "5c5dfdf5ef724adeac422b33bc22c4c2": 1,
+        "e6052af1dfb44e85bf3d28af7b8ab9ab": 1,
+        "fc18dcf34cf248ddabe535a8c1eb13e9": 1,
+        "bf1b7b0953d842979fbb5acfa9df7d18": 1,
+        "6377ed8a54fc4f6db075ebda4c4e6f78": 1,
+        "398691f1f785460098bbe5ee6590333c": 2,
+        "b3b82869fa924bae820e3a6cfb44d689": 2,
+        "f6b6a47d97104a23bfbc2a398fa6f10d": 1,
+        "d6ccdb35e5e143d0ae1fb671ef122afa": 1,
+        "226176c6090a408f97941d6918aaf715": 2,
+        "8da96988a9164ab09ca115e01caf2944": 1,
         "5c779b2d00a94a63898d3dd94d7b7ab9": 1,
+        "23f7eb9b16cf4e9e93b10e2625e88f4b": 1
+      },
+      "BOM": [],
+      "updateTime": 1641862090,
+      "createTime": 1638548260,
+      "histories": [],
+      "created_at": "2021-12-03 19:17:40",
+      "updated_at": "2022-01-11 03:48:10"
+    },
+    {
+      "uuid": "163b6f92d5832d9ad656728a3784f890",
+      "puuid": "e9e306f21f6aec49c62862b721249719",
+      "title": "PCB_N2 Avionics board_2",
+      "filename": "PCB_N2 Avionics board_2.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "23f7eb9b16cf4e9e93b10e2625e88f4b": 1,
+        "0821ed6ea50c44f4909e4be7610e4198": 14,
+        "f8151fdc728a41ebbc304e11d39e5437": 7,
+        "685bd04c33df492ab1ad332fe461c196": 1,
+        "062a6560404e424498dc526a33418d74": 1,
+        "5c779b2d00a94a63898d3dd94d7b7ab9": 1,
+        "5c0be672313e4206a41dd5398a02f108": 1,
+        "31a453d5adfc45cea944a6450adf2918": 1,
         "8da96988a9164ab09ca115e01caf2944": 1,
         "226176c6090a408f97941d6918aaf715": 2,
         "d6ccdb35e5e143d0ae1fb671ef122afa": 1,
         "f6b6a47d97104a23bfbc2a398fa6f10d": 1,
-        "b3b82869fa924bae820e3a6cfb44d689": 4,
-        "fafd024f554e426eb74cf4a204aa88b0": 10,
+        "062b3c1ca40e463696708e6a448b475e": 2,
+        "b3b82869fa924bae820e3a6cfb44d689": 2,
+        "91fff255c44b44a6857cb203c6855514": 2,
+        "fafd024f554e426eb74cf4a204aa88b0": 15,
         "398691f1f785460098bbe5ee6590333c": 2,
         "6377ed8a54fc4f6db075ebda4c4e6f78": 1,
+        "e55a062d79b04303ae20d291dd9f7f9e": 2,
         "bf1b7b0953d842979fbb5acfa9df7d18": 1,
         "fc18dcf34cf248ddabe535a8c1eb13e9": 1,
-        "f5473c5ed40c49bba18f84eff437614e": 1,
+        "f5473c5ed40c49bba18f84eff437614e": 2,
         "e6052af1dfb44e85bf3d28af7b8ab9ab": 1,
         "5c5dfdf5ef724adeac422b33bc22c4c2": 1,
         "330cc923c2624e59a093f2f473f629f9": 1,
         "4ca399a3887148eeab92cd3a98a855b3": 1,
         "4776e1dcb04349eab889b9a02a8ed332": 1,
-        "53f27eb00c18474e8fde1c76707daaec": 1,
-        "5c0be672313e4206a41dd5398a02f108": 1,
-        "e8e78627020b4795961cd17fb8b42b10": 2,
-        "a1702e1d48dc459598830795af3ed78d": 2,
-        "062b3c1ca40e463696708e6a448b475e": 2,
-        "685bd04c33df492ab1ad332fe461c196": 2
+        "53f27eb00c18474e8fde1c76707daaec": 1
       },
       "BOM": [],
-      "updateTime": 1639940317,
-      "createTime": 1638548260,
+      "updateTime": 1641868860,
+      "createTime": 1641862026,
       "histories": [],
-      "created_at": "2021-12-03 19:17:40",
-      "updated_at": "2021-12-19 21:58:37"
+      "created_at": "2022-01-11 03:47:06",
+      "updated_at": "2022-01-11 05:41:00"
     }
   ],
   "sort": [
@@ -1285,5 +1333,5 @@
   "title": "N2 Avionics board",
   "foldername": "N2 Avionics board",
   "schfilename": "N2 Avionics board.json",
-  "schfilemtime": 1641860769589
+  "schfilemtime": 1641869137889
 }
