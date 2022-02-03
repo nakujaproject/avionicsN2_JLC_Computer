@@ -13,8 +13,6 @@
 Adafruit_MPU6050 mpu;
 Adafruit_BMP085 bmp;
 
-
-
 // WIFI credentials
 const char* ssid = "iPIC-WIRELESS";
 const char* password = "987654321jica";
@@ -29,19 +27,21 @@ WebServer server(80);
 float accel_X, accel_Y, accel_Z, rot_X, rot_Y, rot_Z, temp; // todo: flight computer uses accel_Z mainly
 String final_accel_data;
 
+float pressure, altitude;
+
 // struct to hold acceleration values 
 struct acceleration_data{
   float accel_X, accel_Y, accel_Z;
 };
 
 // BMP180 code
-struct bmp_data{
-  float pressure; // to be used for kalmann filtering
-  float altitude; 
-  // float sea_level_pressure; // optional 
-};
+//struct bmp_data{
+//  float pressure; // to be used for kalmann filtering
+//  float altitude; 
+//  // float sea_level_pressure; // optional 
+//};
 
-String final_bmp_data;
+//String final_bmp_data;
 
 
 /*
@@ -66,18 +66,16 @@ void init_WIFI(){
 /*
  * =========================INITIALIZE SENSORS==========================================
  */
-void init_BMP(){
-
-  // initialize mpu6050
-  if(!mpu.begin()){
-    Serial.println("BMP180 Not found..."); 
-    while(1){
-      delay(10); 
-    }
-  }
-  
-  
-}
+//void init_BMP(){
+//
+//  // initialize BMP180
+//  if(!bmp.begin()){
+//    Serial.println("BMP180 Not found..."); 
+//    while(1){
+//      delay(10); 
+//    }
+//  }
+//}
 
 void init_MPU(){
   
@@ -171,15 +169,15 @@ struct acceleration_data read_acceleration(){
 }
 
 
-struct bmp_data read_bmp(){
-  struct bmp_data bmp_d;
-  
-   bmp_d.pressure = bmp.readPressure();
-   bmp_d.altitude = bmp.readAltitude();
-   // bmp_d.sea_level_pressure = bmp.readSeaLevelPressure(); // optional
-
-   return bmp_d;
-}
+//struct bmp_data read_bmp(){
+//  struct bmp_data bmp_d;
+// 
+//   bmp_d.pressure = bmp.readPressure();
+//   bmp_d.altitude = bmp.readAltitude();
+//   // bmp_d.sea_level_pressure = bmp.readSeaLevelPressure(); // optional
+//
+//   return bmp_d;
+//}
 
 
 /*
@@ -197,17 +195,18 @@ void handle_data(){
   String accel_z = String(read_acceleration().accel_Z);
 
   // pressure, altitude data
-  String pressure = String(read_bmp().pressure);
-  String altitude = String(read_bmp().altitude);
+//  String pressure = String(read_bmp().pressure);
+//  String altitude = String(read_bmp().altitude);
   
   final_accel_data = accel_x + accel_y +  accel_z;
-  final_bmp_data = pressure + altitude;
-  
+//  final_bmp_data = pressure + altitude;
 
+  // debug
+  
   // send acceleration for all axis
   //  server.send(200, "text/plain", "x: " + accel_x + ", y: " + accel_y + ", z: " + accel_z);
   server.send(200, "text/plain", final_accel_data);
-  server.send(200, "tex/plain", 
+//  server.send(200, "tex/plain", final_bmp_data);
 
 }
 
@@ -225,7 +224,7 @@ void setup() {
   init_WIFI();
   
   init_MPU(); //initialize MPU6050
-  init_BMP(); // initialize BMP sensor
+//  init_BMP(); // initialize BMP sensor
 
   // handle HTTP REQUESTS
   server.on("/", handle_on_connect);

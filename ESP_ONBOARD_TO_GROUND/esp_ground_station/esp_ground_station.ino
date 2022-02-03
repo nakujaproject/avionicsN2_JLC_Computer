@@ -6,7 +6,7 @@ const char* ssid = "iPIC-WIRELESS";
 const char* password = "987654321jica";
 
 // Server ip address with URL paths. Configure this for each sensor data we want to receive
-const char* accel_data_from_server = "http://10.2.43.62/getdata";
+const char* server_url = "http://10.2.43.62/getdata";
 
 String sensor_data; // convert char to string
 
@@ -44,7 +44,7 @@ void loop() {
     Serial.println("Wifi disconnected...");
   }else{
     // wifi connected. create HTTP request to get data
-    sensor_data = request_server_data(accel_data_from_server);
+    sensor_data = request_server_data(server_url);
     Serial.println("Acceleration: " + sensor_data);  //change this to send all required data at once
   }
  }
@@ -61,7 +61,7 @@ String request_server_data(const char* server_name){
   // send HTTP POST request from server to client
   int http_response_code = http.GET();
 
-  String payload = "N/A";
+  String payload = "No data";
 
   if(http_response_code > 0){
     // Serial.print("HTTP response code:");Serial.print(http_response_code); // optional
