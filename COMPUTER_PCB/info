@@ -4,7 +4,7 @@
   "name": "N2 Avionics board",
   "content": "",
   "created_at": "2021-09-16 16:04:03",
-  "updated_at": "2022-01-11 05:45:37",
+  "updated_at": "2022-02-10 06:43:47",
   "stick": "",
   "documents": [
     {
@@ -12,7 +12,7 @@
       "title": "Sheet_1",
       "description": "",
       "docType": "1",
-      "master": "917a3617e69c660046d9554ad6c3d6b4",
+      "master": "1beadaf6d86a481ae444b584828a221d",
       "thumb": "/images/thumb-default.png",
       "components": {
         "8b8f2c4b0f1a4c05b9bf99dce6e3b5cc": 1,
@@ -38,8 +38,8 @@
         "0162c93b05c079a4f063ffb73f50c063": 2,
         "4363dc679f85409d8170eaa85095a946": 1,
         "d0c0372084f943c391c1e9d9e82978ce": 1,
-        "3e4782e032b14a9e9b8bce027ddf48cf": 2,
-        "3f69fb7874b2264b31c6cd70d022e987": 2
+        "3f69fb7874b2264b31c6cd70d022e987": 2,
+        "860d1ea4a77f4b4587bbebcedebd2d90": 2
       },
       "BOM": [
         [
@@ -215,18 +215,18 @@
           }
         ],
         [
-          "IPT007N06N",
+          "NTR4170NT1G_C710038",
           2,
-          "HSOF-8_IPT007N06N",
-          "Q3,Q5",
+          "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+          "Q3,Q4",
           {
             "BOM_Supplier": "LCSC",
-            "BOM_Manufacturer": "Infineon",
-            "BOM_Manufacturer Part": "IPT007N06N",
-            "BOM_Supplier Part": "C122552",
+            "BOM_Supplier Part": "C710038",
+            "BOM_Manufacturer": "VBsemi Elec",
+            "BOM_Manufacturer Part": "NTR4170NT1G",
             "BOM_JLCPCB Part Class": "Extended Part",
-            "puuid": "91fff255c44b44a6857cb203c6855514",
-            "uuid": "3e4782e032b14a9e9b8bce027ddf48cf"
+            "puuid": "bade90667a6e4731855e9a223387b8a6",
+            "uuid": "860d1ea4a77f4b4587bbebcedebd2d90"
           }
         ],
         [
@@ -620,11 +620,11 @@
           }
         ]
       ],
-      "updateTime": 1641869137,
+      "updateTime": 1644464627,
       "createTime": 1631204235,
       "histories": [],
       "created_at": "2021-09-09 19:17:15",
-      "updated_at": "2022-01-11 05:45:37"
+      "updated_at": "2022-02-10 06:43:47"
     },
     {
       "uuid": "e35c85baa9a2a1901458a25dffc0e4f1",
@@ -1303,7 +1303,6 @@
         "f6b6a47d97104a23bfbc2a398fa6f10d": 1,
         "062b3c1ca40e463696708e6a448b475e": 2,
         "b3b82869fa924bae820e3a6cfb44d689": 2,
-        "91fff255c44b44a6857cb203c6855514": 2,
         "fafd024f554e426eb74cf4a204aa88b0": 15,
         "398691f1f785460098bbe5ee6590333c": 2,
         "6377ed8a54fc4f6db075ebda4c4e6f78": 1,
@@ -1316,14 +1315,15 @@
         "330cc923c2624e59a093f2f473f629f9": 1,
         "4ca399a3887148eeab92cd3a98a855b3": 1,
         "4776e1dcb04349eab889b9a02a8ed332": 1,
-        "53f27eb00c18474e8fde1c76707daaec": 1
+        "53f27eb00c18474e8fde1c76707daaec": 1,
+        "bade90667a6e4731855e9a223387b8a6": 2
       },
       "BOM": [],
-      "updateTime": 1641868860,
+      "updateTime": 1644464624,
       "createTime": 1641862026,
       "histories": [],
       "created_at": "2022-01-11 03:47:06",
-      "updated_at": "2022-01-11 05:41:00"
+      "updated_at": "2022-02-10 06:43:44"
     }
   ],
   "sort": [
@@ -1333,5 +1333,5 @@
   "title": "N2 Avionics board",
   "foldername": "N2 Avionics board",
   "schfilename": "N2 Avionics board.json",
-  "schfilemtime": 1641869137889
+  "schfilemtime": 1644464627993
 }
