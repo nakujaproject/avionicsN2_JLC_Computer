@@ -4,7 +4,7 @@
   "name": "N2 Avionics board",
   "content": "",
   "created_at": "2021-09-16 16:04:03",
-  "updated_at": "2022-02-27 17:01:22",
+  "updated_at": "2022-03-16 12:42:14",
   "stick": "",
   "documents": [
     {
@@ -22,7 +22,6 @@
         "282229edd3da490287b438dcfe6a536c": 2,
         "b3c95761c0494918b59378f0fb3c5d55": 1,
         "13496764f83d55de6ee6c40c818f3731": 3,
-        "269d82dd1f2a4b2c944c1797ef62b603": 1,
         "cc02842d85cf4b0b856857ce646c5b78": 1,
         "f8869938632547dc837b0a31b6eee578": 1,
         "cfc5dabdd2d043c39453fdb66a451077": 1,
@@ -31,7 +30,8 @@
         "736876f24b5b418d94baa3b17df427eb": 1,
         "5c703d98f2824de895fc5ea67bd97a40": 3,
         "444eb6bc15874f9f977bfeffc6ddd706": 1,
-        "15008361946d4af39dfa613383af306f": 1
+        "15008361946d4af39dfa613383af306f": 1,
+        "6d5a78976b9d4ac583217badd9bc217d": 1
       },
       "BOM": [
         [
@@ -237,18 +237,18 @@
           }
         ],
         [
-          "ESP32-WROOM-32D(16MB)",
+          "ESP32-WROOM-32E(16MB)",
           1,
-          "WIFIM-SMD_39P-L25.5-W18.0-P1.27-BL",
+          "WIFI-SMD_ESP32-WROOM-32E",
           "U4",
           {
             "BOM_Supplier": "LCSC",
-            "BOM_Supplier Part": "C529578",
+            "BOM_Supplier Part": "C701343",
             "BOM_Manufacturer": "Espressif Systems",
-            "BOM_Manufacturer Part": "ESP32-WROOM-32D(16MB)",
+            "BOM_Manufacturer Part": "ESP32-WROOM-32E(16MB)",
             "BOM_JLCPCB Part Class": "Extended Part",
-            "puuid": "e6052af1dfb44e85bf3d28af7b8ab9ab",
-            "uuid": "269d82dd1f2a4b2c944c1797ef62b603"
+            "puuid": "febebcac3bf6481f9b9f64b8a412bfb8",
+            "uuid": "6d5a78976b9d4ac583217badd9bc217d"
           }
         ],
         [
@@ -567,6 +567,21 @@
           }
         ],
         [
+          "GP26-2520WV-4P",
+          2,
+          "HDR-TH_4P-P2.54-V-F-R1-C4",
+          "H6,H8",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C2681739",
+            "BOM_Manufacturer": "GEPU(歌普)",
+            "BOM_Manufacturer Part": "GP26-2520WV-4P",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "8d7f58ce579640aeb9a0d1782c061fa8",
+            "uuid": "5fda5c62b04d48b4aa26048c47454688"
+          }
+        ],
+        [
           "6.8nH",
           1,
           "L0402",
@@ -579,6 +594,21 @@
             "BOM_JLCPCB Part Class": "Basic Part",
             "puuid": "8da96988a9164ab09ca115e01caf2944",
             "uuid": "7df199659c41e40e920722d2ed574ba7"
+          }
+        ],
+        [
+          "DB127V-5.0-2P-BK-S",
+          2,
+          "CONN-TH_2P-P5.00_DB127V-5.0-2P-BK-S",
+          "PYRO1,PYRO2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C430623",
+            "BOM_Manufacturer": "DIBO",
+            "BOM_Manufacturer Part": "DB127V-5.0-2P-BK-S",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "456542742ab24c39b3dc8fed26ca73f7",
+            "uuid": "15008361946d4af39dfa613383af306f"
           }
         ],
         [
@@ -687,21 +717,6 @@
           }
         ],
         [
-          "DB127V-5.0-2P-BK-S",
-          2,
-          "CONN-TH_2P-P5.00_DB127V-5.0-2P-BK-S",
-          "U7,U9",
-          {
-            "BOM_Supplier": "LCSC",
-            "BOM_Supplier Part": "C430623",
-            "BOM_Manufacturer": "DIBO",
-            "BOM_Manufacturer Part": "DB127V-5.0-2P-BK-S",
-            "BOM_JLCPCB Part Class": "Extended Part",
-            "puuid": "456542742ab24c39b3dc8fed26ca73f7",
-            "uuid": "15008361946d4af39dfa613383af306f"
-          }
-        ],
-        [
           "AT2659",
           1,
           "DFN-6_L1.6-W1.0-P0.55-BL",
@@ -717,11 +732,11 @@
           }
         ]
       ],
-      "updateTime": 1645969925,
+      "updateTime": 1647422225,
       "createTime": 1631204235,
       "histories": [],
       "created_at": "2021-09-09 19:17:15",
-      "updated_at": "2022-02-27 16:52:05"
+      "updated_at": "2022-03-16 12:17:05"
     },
     {
       "uuid": "e35c85baa9a2a1901458a25dffc0e4f1",
@@ -1442,7 +1457,8 @@
         "154b66255b01a09bf1c88bb1ea89be78": 2,
         "a571133e57b33f8fdf2317261143470d": 1,
         "93ebcd6080ba26a913b1eeabcd603876": 1,
-        "15008361946d4af39dfa613383af306f": 2
+        "15008361946d4af39dfa613383af306f": 2,
+        "5fda5c62b04d48b4aa26048c47454688": 2
       },
       "BOM": [
         [
@@ -1978,6 +1994,21 @@
           }
         ],
         [
+          "GP26-2520WV-4P",
+          2,
+          "HDR-TH_4P-P2.54-V-F-R1-C4",
+          "H6,H8",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C2681739",
+            "BOM_Manufacturer": "GEPU(歌普)",
+            "BOM_Manufacturer Part": "GP26-2520WV-4P",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "8d7f58ce579640aeb9a0d1782c061fa8",
+            "uuid": "5fda5c62b04d48b4aa26048c47454688"
+          }
+        ],
+        [
           "6.8nH",
           1,
           "L0402",
@@ -2128,11 +2159,11 @@
           }
         ]
       ],
-      "updateTime": 1645970203,
+      "updateTime": 1646786368,
       "createTime": 1644848448,
       "histories": [],
       "created_at": "2022-02-14 17:20:48",
-      "updated_at": "2022-02-27 16:56:43"
+      "updated_at": "2022-03-09 03:39:28"
     },
     {
       "uuid": "1f2edd6776a90da95f094b158886ed08",
@@ -2190,6 +2221,8 @@
       "master": "",
       "thumb": "/images/thumb-default.png",
       "components": {
+        "febebcac3bf6481f9b9f64b8a412bfb8": 1,
+        "8d7f58ce579640aeb9a0d1782c061fa8": 2,
         "f8151fdc728a41ebbc304e11d39e5437": 7,
         "e55a062d79b04303ae20d291dd9f7f9e": 2,
         "cbca8361ca4846ca9145c1c1ee08aa07": 1,
@@ -2212,7 +2245,6 @@
         "6377ed8a54fc4f6db075ebda4c4e6f78": 1,
         "bf1b7b0953d842979fbb5acfa9df7d18": 1,
         "fc18dcf34cf248ddabe535a8c1eb13e9": 1,
-        "e6052af1dfb44e85bf3d28af7b8ab9ab": 1,
         "5c5dfdf5ef724adeac422b33bc22c4c2": 1,
         "330cc923c2624e59a093f2f473f629f9": 1,
         "4776e1dcb04349eab889b9a02a8ed332": 1,
@@ -2222,11 +2254,11 @@
         "37497ae7a3564a879807ed5f5684c8b3": 1
       },
       "BOM": [],
-      "updateTime": 1645970482,
+      "updateTime": 1647423734,
       "createTime": 1641862026,
       "histories": [],
       "created_at": "2022-01-11 03:47:06",
-      "updated_at": "2022-02-27 17:01:22"
+      "updated_at": "2022-03-16 12:42:14"
     }
   ],
   "sort": [
@@ -2237,5 +2269,5 @@
   "title": "N2 Avionics board",
   "foldername": "N2 Avionics board",
   "schfilename": "N2 Avionics board.json",
-  "schfilemtime": 1645970203493
+  "schfilemtime": 1647422225434
 }
